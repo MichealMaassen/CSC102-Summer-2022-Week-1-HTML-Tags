@@ -1,23 +1,27 @@
 <!--This is a test of the comment funtion. This file is made for CSC102
     Assignment: Launching your UAT Space Program HTML Document Tags
-    Written by Micheal Maassen
+    Written by Michael Maassen
     Email: smartgunner8535@gmail.com
     Phone: (720) 394-2523-->
 <!DOCTYPE html>
-<!--This fufils HTML tag requirement-->
+<!--This fufils HTML tag requirement for the entire document-->
 <html>
 <!--This fufils head tag requirement-->
 <head>
+    <!--This changes the background and text color-->
+    <style>
+        body {
+         background-image: url(335116-Earth-space-render.jpg);
+         color: white;
+    }
+    </style>
     <!--Title goes at the title bar (very top)-->
     <title>
         Mike Maassen's UAT Space Page
     </title>
-    <script>
-        //This fufils alert function requirement
-        var alertText = "Test of alert function";
-        alert("alertText");
-    </script>
+    <script src="code.js"></script>
 </head>
+
 <!--This fufils body tag requirement-->
 <body>
     <!--Logo for UAT Space Program-->
@@ -29,21 +33,26 @@
         for more than one line of text. That is why it is called 
         a paragraph tag.
     </p>
-   
     <script>
-        //This is a one line comment test
-        //Created a textValue comment
-        var textValue="Test of the document.write() function";
-        //Using textValue comment
-        document.write(textValue);
+        //one line comment
+        //created a textValue comment
+        var textValue= "Test of the document.write() function";
+        //use that textValue comment
+        document.write(testValue);
 
-        /*This is a multiline 
-        comment test*/
-    </script>
-    <br>
-    <br>
-    <!--This fuffils button requirements-->
-    <button>Start</button>
-    <button>Stop</button>
+        /*multiline
+        comment for java
+        script*/
+    </script>  
+   <br>
+   <br>
+   Time left before launch: <br>
+   <div id="countdownDisplay">Launch not initiated</div>
+   <br>
+   <br>
+   <!--This fufils button requirements-->
+   <button onclick="blastoffTimerV1();">Start</button>
+   <button>Stop</button>
 </body>
+
 </html>
